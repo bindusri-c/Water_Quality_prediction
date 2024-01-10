@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="login" style="padding-left: 120px;">
+           <h1>Water quality Prediction</h1>
+           <form action="{{ url_for('predict)}}"method="post">
+              <input type="text" name="Year" placeholder="Enter the year" required="required"/>
+            
+              <button type="submit" class="btn">Predict</button>
+           </form>
+           <br>
+           <br>
+
+           {{prediction_text}}
+        </div>
+    </body>
+</html>
